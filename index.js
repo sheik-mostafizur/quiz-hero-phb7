@@ -183,3 +183,11 @@ document.querySelector("#submit").addEventListener("click", () => {
   }, 1500);
   window.scrollTo(0, 0);
 });
+
+// Start my custom new code
+
+// redirect_blog page
+const redirect_blog = document.getElementById("redirect_blog");
+redirect_blog.addEventListener("click", function () {
+  window.location = "./blog.html";
+});
