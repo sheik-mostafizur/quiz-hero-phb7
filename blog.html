@@ -47,6 +47,7 @@
 
   <!-- start main section -->
   <main class="container mx-auto lg:w-2/4 mt-8 space-y-6">
+
     <!-- start forEach, map, and filter -->
     <article class="shadow rounded px-4 py-6 bg-gray-50 hover:shadow-lg transition">
       <h2 class="font-bold text-xl mb-3">What is the difference forEach, map, and filter?</h2>
@@ -60,6 +61,40 @@
         with only the elements that pass a certain condition.</p>
     </article>
     <!-- end forEach, map, and filter -->
+
+
+    <!-- start local storage, session storage, and cooking -->
+    <article class="shadow rounded px-4 py-6 bg-gray-50 hover:shadow-lg transition">
+      <h2 class="font-bold text-xl mb-3">What is the difference between Local Storage, Session Storage, and Cookies?
+      </h2>
+      <p><b>Local Storage: </b>This is a mechanism that allows you to store up to 10 MB of data per domain that persists
+        even after the browser is closed.</p>
+      <p><b>Session Storage: </b>This is a mechanism that allows you to store up to 5 MB of data per domain that only
+        lasts for the current session, i.e., until the browser (or tab) is closed.</p>
+      <p><b>Cookies: </b>These are small pieces of data (up to 4 KB) that are sent by the server and stored by the
+        browser. They are automatically sent back to the server on every HTTP request</p>
+    </article>
+    <!-- end local storage, session storage, and cooking -->
+
+
+    <!-- start event loop -->
+    <article class="shadow rounded px-4 py-6 bg-gray-50 hover:shadow-lg transition">
+      <h2 class="font-bold text-xl mb-3">What is Event loop and how to work it in JavaScript?</h2>
+      <p>The event loop is a mechanism that allows JavaScript to execute asynchronous code in a single-threaded
+        environment. It is responsible for executing the code, collecting and processing events, and executing queued
+        sub-tasks1.</p>
+      <p><b>The event loop works by following these steps:</b></p>
+
+      <p>It executes the code in the main thread, which can be either synchronous or
+        asynchronous.
+        When an asynchronous function executes, it registers a callback function and returns immediately, without
+        blocking the main thread.
+        When the main thread is empty, the event loop dequeues and runs the oldest task from the macro-task queue.
+        After each macro-task, it executes all the micro-tasks in the micro-task queue until it is empty2.
+        It repeats this process until both queues are empty.</p>
+    </article>
+    <!-- end event loop -->
+
   </main>
   <!-- end main section -->
 
