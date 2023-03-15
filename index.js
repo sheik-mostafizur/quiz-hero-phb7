@@ -48,7 +48,7 @@ const loadQuiz = async () => {
   const res = await fetch("./data/quiz.json");
   const data = await res.json();
   quizData = data;
-  displayQuiz(data);
+  displayQuiz(quizData);
 };
 
 // Displaying quiz on quiz page
